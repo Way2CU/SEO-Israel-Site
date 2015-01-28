@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<language name="English" short="en">
-		<constant name="site_title">Site title</constant>
+	<language name="Hebrew" short="he" rtl="yes" default="yes">
+		<constant name="site_title">SEO ISRAEL</constant>
+		<constant name="header">רוצה פרסום אפקטיבי שמביא תוצאות?</constant>
+		<constant name="seo_title">פרסום עם המומחים של Seo Israel – זריקת אדרנלין לעסק שלך</constant>
+		<constant name="phone">09-7654321</constant>
+		<constant name="send">שלח</constant>
 	</language>
 </document>
