@@ -1,0 +1,15 @@
+/**
+ * Main Style Sheet
+ * SEO-ISRAEL
+ *
+ * Copyright (c) 2014. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+div.inner_wrap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	position: relative;
+}
