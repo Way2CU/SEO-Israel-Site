@@ -8,7 +8,124 @@
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<header></header>
+			<!--Top Section of the site  -->
+			<header>
+					<div class="inner_wrap">
+						 <div class="contact">
+								<span><cms:text constant="contact"/></span>
+								<a
+									href="'tel:'.urlencode(Language::getText('phone'))"
+									cms:eval="href"
+									class="phone"
+									>
+									<cms:text constant="phone"/>
+								</a>
+						 </div>
+						 <h1><cms:text constant="header"/></h1>
+						 <div class="form_wrap">
+						 		<cms:module
+									name="articles"
+									action="show"
+									text_id="form_article"
+									template="parts/article_header.xml"
+									/>
+								<cms:module
+							 				name="contact_form"
+							 				action="show"
+							 				text_id="animation_form"
+					 				/>
+
+						 </div>
+					</div>
+					<div class="header_bottom">
+						<h2><cms:text constant="seo_title"/></h2>
+					</div>
+			</header>
+			<!-- FEATURES SECTION -->
+			<div class="feature_wrap">
+							<div class="feature">
+								<cms:module
+									name="articles"
+									action="show"
+									text_id="feature1"
+									template="parts/article_header.xml"
+									/>
+
+							</div>
+							<div class="feature">
+								<cms:module
+									name="articles"
+									action="show"
+									text_id="feature2"
+									template="parts/article_header.xml"
+									/>
+
+							</div>
+							<div class="feature">
+								<cms:module
+									name="articles"
+									action="show"
+									text_id="feature3"
+									template="parts/article_header.xml"
+									/>
+
+							</div>
+							<div class="feature">
+								<cms:module
+									name="articles"
+									action="show"
+									text_id="feature4"
+									template="parts/article_header.xml"
+									/>
+
+							</div>
+			</div>
+			<!-- Social Section -->
+			<div class="social_wrap">
+					<div class="inner_wrap">
+							<h2><cms:text constant="social_title"/></h2>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+					</div>
+			</div>
+			<!-- Testimonial Section -->
+			<div class="testimonial_wrap">
+					<div class="inner_wrap">
+							<h2><cms:text constant="testimonial_title"/></h2>
+							<div class="testimonial">
+								<cms:module
+									name="articles"
+									action="show"
+									text_id="testimonial_one"
+									template="parts/article_noHeading.xml"
+									/>
+
+							</div>
+							<div class="testimonial">
+								<cms:module
+									name="articles"
+									action="show"
+									text_id="testimonial_two"
+									template="parts/article_noHeading.xml"
+									/>
+
+							</div>
+							<div class="testimonial">
+								<cms:module
+									name="articles"
+									action="show"
+									text_id="testimonial_three"
+									template="parts/article_noHeading.xml"
+									/>
+
+							</div>
+					</div>
+			</div>
 
 		</body>
 	</html>
