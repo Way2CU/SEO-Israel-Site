@@ -10,5 +10,7 @@
 		<constant name="contact">צור קשר</constant>
 		<constant name="social_title">פרסום בפלטפורמות הפרסום המובילות</constant>
 		<constant name="testimonial_title">מספרים עלינו</constant>
+		<constant name="copyright">Designed and developed by <![CDATA[<a href="http://way2cu.com">Way2cu</a>.]]></constant>
+		<constant name="rights">All rights reserved.</constant>
 	</language>
 </document>
