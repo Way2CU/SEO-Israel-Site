@@ -5,6 +5,7 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
@@ -21,21 +22,50 @@
 									<cms:text constant="phone"/>
 								</a>
 						 </div>
-						 <div class="form_wrap">
-						 	<h1><cms:text constant="header"/></h1>
-						 		<cms:module
-									name="articles"
-									action="show"
-									text_id="form_article"
-									template="parts/article_header.xml"
-									/>
-								<cms:module
-							 				name="contact_form"
-							 				action="show"
-							 				text_id="animation_form"
-					 				/>
+							<div class="form_wrap">
+							 	<h1><cms:text constant="header"/></h1>
+							 		<cms:module
+										name="articles"
+										action="show"
+										text_id="form_article"
+										template="parts/article_header.xml"
+										/>
+									<cms:module
+								 				name="contact_form"
+								 				action="show"
+								 				text_id="animation_form"
+						 				/>
 
-						 </div>
+							 </div>
+							<!-- animation Divs -->
+							 <div class="first_step">
+							 		<div class="progress">
+							 			<div class="meter"><span></span></div>
+							 			<span><cms:text constant="anima1"/></span>
+							 		</div>
+							 		<div class="progress">
+							 			<div class="meter"><span></span></div>
+							 			<span><cms:text constant="anima2"/></span>
+							 		</div>
+							 		<div class="progress">
+							 			<div class="meter"><span></span></div>
+							 			<span><cms:text constant="anima3"/></span>
+							 		</div>
+							 		<div class="progress">
+							 			<div class="meter"><span></span></div>
+							 			<span><cms:text constant="anima4"/></span>
+							 		</div>
+
+							 </div>
+							 <div class="thanks_step">
+						 			<cms:module
+										name="articles"
+										action="show"
+										text_id="success"
+										template="parts/article_header.xml"
+										/>
+
+							 </div>
 					</div>
 					<div class="header_bottom">
 						<h2><cms:text constant="seo_title"/></h2>
