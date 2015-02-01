@@ -7,6 +7,9 @@
  */
 
 function on_site_load() {
+	$('div.controls button').click(function(event) {
+		event.preventDefault();
+	});
 }
 
 $(on_site_load);
