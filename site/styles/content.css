@@ -89,6 +89,9 @@ header div.inner_wrap div.contact a {
 header div.inner_wrap div.form_wrap  {
 	display: block;
 	position: relative;
+	opacity: 1;
+	z-index: 1;
+
 }
 
 header div.inner_wrap div.form_wrap h1 {
@@ -151,8 +154,9 @@ header div.inner_wrap div.form_wrap form label {
 	text-align: right;
 	direction: ltr;
 	width: 724px;
+	background-color: white;
 	border:2px solid #94D500;
-	border-radius: 8px;
+	border-radius: 10px;
 	box-shadow:3px 3px 6px rgba(0, 0,0, 0.4);
 
 }
@@ -167,7 +171,7 @@ header div.inner_wrap div.form_wrap form label span {
 	height: 55px;
 	background-color: white;
 	border:none;
-	border-radius: 8px 0px 0px 8px;
+	border-radius: 10px 0px 0px 10px;
 }
 
 header div.inner_wrap div.form_wrap form label input {
@@ -175,7 +179,7 @@ header div.inner_wrap div.form_wrap form label input {
 	vertical-align: middle;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width: 500px;
+	width: 498px;
 	height: 55px;
 	font-size: 2em;
 	border: none;
@@ -201,6 +205,168 @@ header div.inner_wrap div.form_wrap form div.controls button {
 	font-weight: 600;
 	border: none;
 	cursor: pointer;
+}
+/*
+	First Step Div Animation
+*/
+header div.inner_wrap div.first_step {
+	position: absolute;
+	padding-top: 450px;
+	top: 0px;
+	left: 0px;
+	width: 1200px;
+	height:400px;
+	text-align: center;
+	background-image: url(../images/animation/magnifying-glass.svg),url(../images/animation/Earth-29-june2.gif);
+	background-repeat: no-repeat,no-repeat;
+	background-position: 590px 180px, center 160px;
+	background-size: 107px 107px,115px 115px;
+	-webkit-animation:navigate 2s infinite;
+	animation:navigate 2s infinite;
+	-webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-direction: alternate;
+    opacity: 0;
+
+}
+
+@-webkit-keyframes navigate {
+	0%{background-position: 590px 180px, center 160px;}
+	100%{background-position:535px 180px, center 160px;}
+}
+
+
+header div.inner_wrap div.first_step div.progress {
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	color: white;
+	position: relative;
+}
+
+header div.inner_wrap div.first_step div.progress div.meter{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: top;
+	box-shadow: 0px 0px 0px 2px white;
+	border-radius: 15px;
+	width: 200px;
+	height: 30px;
+	position: relative;
+}
+
+header div.inner_wrap div.first_step div.progress div.meter span {
+	display: block;
+	border-radius: 15px;
+	background-color: greenyellow;
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+
+header div.inner_wrap div.first_step div.progress:nth-of-type(1) div.meter span {
+	width:0%;
+	-webkit-animation:progress1 12s infinite;
+	animation:progress1 12s infinite;
+	position: relative;
+
+}
+
+header div.inner_wrap div.first_step div.progress:nth-of-type(2) div.meter span {
+	width:0%;
+	animation:progress1 12s infinite;
+	-webkit-animation:progress2 12s infinite;
+	position: relative;
+
+}
+
+header div.inner_wrap div.first_step div.progress:nth-of-type(3) div.meter span {
+	width:0%;
+	animation:progress1 12s infinite;
+	-webkit-animation:progress3 12s infinite;;
+	position: relative;
+
+}
+
+header div.inner_wrap div.first_step div.progress:nth-of-type(4) div.meter span {
+	width:0%;
+	animation:progress1 12s infinite;
+	-webkit-animation:progress4 12s infinite;;
+	position: relative;
+
+}
+
+header div.inner_wrap div.first_step div.progress > span {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 15px;
+	font-size: 1.3em;
+}
+
+@-webkit-keyframes progress1 {
+	0%{width: 0%;}
+	20%{width:100%;}
+	40%{width:100%;}
+	60%{width:100%;}
+	80%{width:100%;}
+	100%{width:100%;}
+}
+
+@-webkit-keyframes progress2 {
+	0%{width: 0%;}
+	20%{width:0%;}
+	40%{width:100%;}
+	60%{width:100%;}
+	80%{width:100%;}
+	100%{width:100%;}
+}
+
+@-webkit-keyframes progress3 {
+	0%{width: 0%;}
+	20%{width:0%;}
+	40%{width:0%;}
+	60%{width:100%;}
+	80%{width:100%;}
+	100%{width:100%;}
+}
+
+@-webkit-keyframes progress4 {
+	0%{width: 0%;}
+	20%{width:0%;}
+	40%{width:0%;}
+	60%{width:0%;}
+	80%{width:100%;}
+	100%{width:100%;}
+}
+
+/*Form Success*/
+
+header div.inner_wrap div.thanks_step {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 1200px;
+	height: 400px;
+	padding-top: 400px;
+	background-image: url(../images/animation/like-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center 150px;
+	background-size: 215px 215px;
+	text-align: center;
+	opacity: 0;
+}
+
+header div.inner_wrap div.thanks_step article h2 {
+	display: block;
+	font-size: 3.5em;
+	color:white;
+
+}
+
+header div.inner_wrap div.thanks_step article p {
+	display: block;
+	font-size: 2.2em;
+	color:white;
 }
 
 /*
@@ -568,7 +734,7 @@ footer div.inner_wrap div.copyright {
 	background-image: url(../images/footer/way2cu-logo.svg);
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 45px 45px;
+	background-size:auto 45px;
 	text-align: center;
 	width: 275px;
 }
@@ -591,6 +757,20 @@ footer div.inner_wrap div.copyright span:nth-of-type(2) {
 	color: white;
 	text-align: left;
 }
+
+/*
+	Tablet Version
+*/
+
+@media all and (max-width: 1024px) and (min-width: 768px){
+
+
+
+}
+
+
+
+
 
 
 
