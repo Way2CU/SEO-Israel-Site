@@ -21,8 +21,8 @@
 									<cms:text constant="phone"/>
 								</a>
 						 </div>
-						 <h1><cms:text constant="header"/></h1>
 						 <div class="form_wrap">
+						 	<h1><cms:text constant="header"/></h1>
 						 		<cms:module
 									name="articles"
 									action="show"
@@ -126,6 +126,55 @@
 							</div>
 					</div>
 			</div>
+			<!-- Clients Section -->
+			<div class="client_wrap">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+			</div>
+			<!-- Footer -->
+			<footer>
+					<div class="inner_wrap">
+							<div class="contact_wrap">
+								<div class="contact">
+										<cms:module
+												name="articles"
+												action="show"
+												text_id="contact1"
+												template="parts/article_header.xml"
+												/>
+								</div>
+								<div class="contact">
+										<cms:module
+												name="articles"
+												action="show"
+												text_id="contact2"
+												template="parts/article_header.xml"
+												/>
+								</div>
+								<div class="contact">
+										<cms:module
+												name="articles"
+												action="show"
+												text_id="contact3"
+												template="parts/article_header.xml"
+												/>
+								</div>
+							</div>
+							<!-- Copyright -->
+							<div class="copyright">
+								<span><cms:text constant="copyright"/></span>
+								<span><cms:text constant="rights"/></span>
+							</div>
+
+					</div>
+			</footer>
 
 		</body>
 	</html>
