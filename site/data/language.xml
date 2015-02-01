@@ -12,5 +12,9 @@
 		<constant name="testimonial_title">מספרים עלינו</constant>
 		<constant name="copyright">Designed and developed by <![CDATA[<a href="http://way2cu.com">Way2cu</a>.]]></constant>
 		<constant name="rights">All rights reserved.</constant>
+		<constant name="anima1">מאתר מילות מפתח</constant>
+		<constant name="anima2">בודק אפשרויות פרסום</constant>
+		<constant name="anima3">מנתח מתחרים</constant>
+		<constant name="anima4">מכין דוח אישי</constant>
 	</language>
 </document>
