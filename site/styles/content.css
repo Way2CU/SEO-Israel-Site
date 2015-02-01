@@ -83,19 +83,21 @@ header div.inner_wrap div.contact a {
 	text-decoration: none;
 }
 
-header div.inner_wrap h1 {
-	display: block;
-	width: 800px;
-	color: white;
-	font-size: 4.3em;
-	font-weight: 900;
-	text-shadow: 1px 1px 4px rgba(0, 0,0, 0.7);
-}
 /*
 	Header article
 */
 header div.inner_wrap div.form_wrap  {
 	display: block;
+	position: relative;
+}
+
+header div.inner_wrap div.form_wrap h1 {
+	display: block;
+	width: 800px;
+	color: white;
+	font-size: 4.3em;
+	font-weight: 900;
+	text-shadow: 3px 3px 6px rgba(0, 0,0, 0.4);
 }
 
 header div.inner_wrap div.form_wrap article {
@@ -109,7 +111,7 @@ header div.inner_wrap div.form_wrap article h2 {
 	font-size: 3.4em;
 	font-weight: bold;
 	color:#94D500;
-	text-shadow: 1px 1px 4px rgba(0, 0,0, 0.7);
+	text-shadow: 3px 3px 6px rgba(0, 0,0, 0.4);
 	position: relative;
 }
 
@@ -132,7 +134,7 @@ header div.inner_wrap div.form_wrap article p {
 	width: 850px;
 	font-size: 1.9em;
 	color:white;
-	text-shadow: 1px 1px 4px rgba(0, 0,0, 0.7);
+	text-shadow: 3px 3px 6px rgba(0, 0,0, 0.4);
 }
 
 /*
@@ -151,7 +153,7 @@ header div.inner_wrap div.form_wrap form label {
 	width: 724px;
 	border:2px solid #94D500;
 	border-radius: 8px;
-	box-shadow:1px 1px 4px rgba(0, 0,0, 0.7);
+	box-shadow:3px 3px 6px rgba(0, 0,0, 0.4);
 
 }
 
@@ -281,12 +283,13 @@ div.feature_wrap  div.feature article {
 div.feature_wrap  div.feature article h2 {
 	display: block;
 	text-align: center;
+	font-size: 1.8vw;
 	font-weight: 600;
 }
 
 div.feature_wrap  div.feature article ul li p {
 	display: block;
-	font-size: 1.3em;
+	font-size: 1.2vw;
 }
 
 /*
@@ -432,4 +435,166 @@ div.testimonial_wrap div.inner_wrap div.testimonial article p:nth-of-type(3) {
 	font-size: 1em;
 	font-weight: 500;
 }
+
+/*
+	clients section
+*/
+
+div.client_wrap {
+	display: block;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+div.client_wrap span {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 10px;
+	background-image: url(../images/clients/clients.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: auto 70px;
+	width: 150px;
+	height:70px;
+}
+
+div.client_wrap span:nth-of-type(9) {
+	width: 206px;
+	background-position: 0px center;
+}
+
+div.client_wrap span:nth-of-type(8) {
+	width: 212px;
+	background-position: -216px center;
+}
+div.client_wrap span:nth-of-type(7) {
+	width: 108px;
+	background-position: -438px center;
+}
+div.client_wrap span:nth-of-type(6) {
+	width: 319px;
+	background-position: -555px center;
+}
+
+div.client_wrap span:nth-of-type(5) {
+	width: 344px;
+	background-position: -884px center;
+}
+
+div.client_wrap span:nth-of-type(4) {
+	width: 237px;
+	background-position: -1237px center;
+}
+
+div.client_wrap span:nth-of-type(3) {
+	width: 53px;
+	background-position: -1485px center;
+}
+
+div.client_wrap span:nth-of-type(2) {
+	width: 67px;
+	background-position: -1547px center;
+}
+
+div.client_wrap span:nth-of-type(1) {
+	width: 201px;
+	background-position: -1624px center;
+}
+
+/*
+	Footer Section
+*/
+
+footer {
+	display: block;
+	background-color:#5B6465;
+}
+
+footer div.inner_wrap {
+	display: block;
+	padding-top: 40px;
+}
+
+footer div.inner_wrap div.contact_wrap {
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+
+footer div.inner_wrap div.contact_wrap div.contact {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 80px;
+	background-image: url(../images/footer/phone.svg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 72px 72px;
+	width: 400px;
+	color:white;
+}
+
+footer div.inner_wrap div.contact_wrap div.contact:nth-of-type(1) {
+	background-image: url(../images/footer/phone.svg);
+}
+
+footer div.inner_wrap div.contact_wrap div.contact:nth-of-type(2) {
+	background-image: url(../images/footer/email.svg);
+}
+
+footer div.inner_wrap div.contact_wrap div.contact:nth-of-type(3) {
+	background-image: url(../images/footer/location.svg);
+}
+
+footer div.inner_wrap div.contact_wrap div.contact article h2 {
+	display: block;
+	font-size: 2em;
+}
+
+footer div.inner_wrap div.contact_wrap div.contact article p {
+	display: block;
+	font-size: 1.7em;
+}
+
+footer div.inner_wrap div.copyright {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	background-image: url(../images/footer/way2cu-logo.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 45px 45px;
+	text-align: center;
+	width: 275px;
+}
+
+footer div.inner_wrap div.copyright span:nth-of-type(1) {
+	display: block;
+	direction: ltr;
+	color:white;
+	text-align: left;
+}
+
+footer div.inner_wrap div.copyright span:nth-of-type(1) a {
+	padding-left: 5px;
+	color: rgb(2, 188, 229);
+}
+
+footer div.inner_wrap div.copyright span:nth-of-type(2) {
+	display: block;
+	direction: ltr;
+	color: white;
+	text-align: left;
+}
+
+
+
+
+
+
 
