@@ -202,7 +202,6 @@ header div.animation_page div.animate:nth-of-type(1) form label span {
 header div.animation_page div.animate:nth-of-type(1) form label input {
 	display: inline-block;
 	vertical-align: middle;
-	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 498px;
 	height: 55px;
@@ -239,15 +238,12 @@ header div.animation_page div.animate:nth-of-type(2) {
 	width: 100%;
 	height:100%;
 	text-align: center;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color:rgba(43, 59, 79, 0.7);
 	background-image: url(../images/animation/magnifying-glass.svg),url(../images/animation/Earth-29-june2.gif);
 	background-repeat: no-repeat,no-repeat;
 	background-position: 965px 180px, center 160px;
 	background-size: 107px 107px,115px 115px;
-	-webkit-animation:navigate 12s infinite;
-	animation:navigate 12s infinite;
-	-webkit-animation-direction: alternate;  Chrome, Safari, Opera
-    animation-direction: alternate;
+
     opacity: 1;
     transition:all 1s;
 
@@ -296,34 +292,42 @@ header div.animation_page div.animate:nth-of-type(2) div.inner_wrap div.progress
 	position: relative;
 }
 
-header div.animation_page div.animate:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(1) div.meter span {
+header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(1) div.meter span {
 	width:0%;
 	-webkit-animation:progress1 12s infinite;
 	animation:progress1 12s infinite;
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 	position: relative;
 
 }
 
-header div.animation_page div.animate:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(2) div.meter span {
+header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(2) div.meter span {
 	width:0%;
 	animation:progress1 12s infinite;
 	-webkit-animation:progress2 12s infinite;
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 	position: relative;
 
 }
 
-header div.animation_page div.animate:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(3) div.meter span {
+header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(3) div.meter span {
 	width:0%;
 	animation:progress1 12s infinite;
 	-webkit-animation:progress3 12s infinite;
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 	position: relative;
 
 }
 
-header div.animation_page div.animate:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(4) div.meter span {
+header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(4) div.meter span {
 	width:0%;
 	animation:progress1 12s infinite;
 	-webkit-animation:progress4 12s infinite;
+	-webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
 	position: relative;
 
 }
@@ -333,6 +337,16 @@ header div.animation_page div.animate:nth-of-type(2) div.inner_wrap div.progress
 	vertical-align: top;
 	padding-top: 15px;
 	font-size: 1.3em;
+}
+
+header div.animation_page div.animate:nth-of-type(2).visible {
+	right: 0%;
+	-webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+    animation-delay: 4s;
+	-webkit-animation:navigate 12s infinite;
+	animation:navigate 12s infinite;
+	-webkit-animation-direction: alternate;  Chrome, Safari, Opera
+    animation-direction: alternate;
 }
 
 
@@ -372,8 +386,9 @@ header div.animation_page div.animate:nth-of-type(2) div.inner_wrap div.progress
 	80%{width:100%;}
 	100%{width:100%;}
 }
-
-/*Form Success*/
+/*
+	Form
+*/
 
 header div.animation_page div.animate:nth-of-type(3) {
 	position: absolute;
@@ -381,7 +396,142 @@ header div.animation_page div.animate:nth-of-type(3) {
 	right: -100%;
 	width: 100%;
 	height:100%;
-	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 1;
+	background-color:rgba(43, 59, 79, 0.7);
+	transition:all 1s;
+}
+
+header div.animation_page div.animate:nth-of-type(3).visible {
+	right: 0%;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap {
+	display: block;
+	padding-top: 150px;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap div.form_text {
+	display: block;
+	text-align: center;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap div.form_text h2 {
+	display: inline-block;
+	vertical-align: top;
+	margin:0px;
+	color:white;
+	font-size:3em;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap div.form_text span:first-of-type{
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 20px;
+	color:white;
+	font-size: 3em;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap div.form_text span:last-of-type {
+	display: block;
+	color:white;
+	font-size: 2em;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form {
+	display: block;
+	text-align: center;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label {
+	display: block;
+	padding-top: 20px;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label.checkbox {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	position: relative;
+	width: 340px;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label.checkbox span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 50px;
+	padding-top: 40px;
+	width: 460px;
+	font-size: 1em;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label.checkbox input {
+	border:1px solid white;
+	position: absolute;
+	top: 24px;
+	right: 0px;
+	width: 30px;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	width: 120px;
+	color:white;
+	font-size: 1.8em;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label input {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.6em;
+	height: 60px;
+	border:1px solid rgba(43, 59, 79, 0.7) ;
+	transition:all 0.5s;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label input:focus {
+	border:1px solid #00BBE3;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form div.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	width: 450px;
+	text-align: center;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form div.controls button {
+	margin-right: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	border:none;
+	color:white;
+	background-color: #94D500;
+	border-radius: 8px;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+
+
+
+
+/*Form Success*/
+
+header div.animation_page div.animate:nth-of-type(4) {
+	position: absolute;
+	top:0px;
+	right: -100%;
+	width: 100%;
+	height:100%;
+	background-color:rgba(43, 59, 79, 0.7);
 	background-image: url(../images/animation/like-icon.svg);
 	background-repeat: no-repeat;
 	background-position: center 150px;
@@ -391,13 +541,13 @@ header div.animation_page div.animate:nth-of-type(3) {
 	transition:all 1s;
 }
 
-header div.animation_page div.animate:nth-of-type(3) div.inner_wrap {
+header div.animation_page div.animate:nth-of-type(4) div.inner_wrap {
 	display: block;
 	padding-top: 350px;
 }
 
 
-header div.animation_page div.animate:nth-of-type(3) div.inner_wrap article h2 {
+header div.animation_page div.animate:nth-of-type(4) div.inner_wrap article h2 {
 	display: block;
 	text-align: center;
 	font-size: 3.5em;
@@ -405,7 +555,7 @@ header div.animation_page div.animate:nth-of-type(3) div.inner_wrap article h2 {
 
 }
 
-header div.animation_page div.animate:nth-of-type(3) div.inner_wrap article p {
+header div.animation_page div.animate:nth-of-type(4) div.inner_wrap article p {
 	display: block;
 	text-align: center;
 	font-size: 2.2em;
