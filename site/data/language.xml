@@ -16,5 +16,8 @@
 		<constant name="anima2">בודק אפשרויות פרסום</constant>
 		<constant name="anima3">מנתח מתחרים</constant>
 		<constant name="anima4">מכין דוח אישי</constant>
+		<constant name="userUrl">הדוח מוכן עבור האתר</constant>
+		<constant name="form_title">מלא את הפרטים ונציג מטעמנו יחזור אליך בהקדם</constant>
+		<constant name="demoUrl">http://way2cu.com</constant>
 	</language>
 </document>
