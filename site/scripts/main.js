@@ -11,9 +11,10 @@ function on_site_load() {
 	Caracal.animation_pages = new PageControl('div.animation_page','div.animate')
 	Caracal.animation_pages.attachNextControl($('div.controls button'))
 	$('div.controls button').click(function() {
-
-		setTimeout(Caracal.animation_pages.nextPage, 5000);
-		});
+		setTimeout(function() {
+			Caracal.animation_pages.nextPage
+		}, 5000);
+	});
 
 
 
