@@ -22,51 +22,71 @@
 									<cms:text constant="phone"/>
 								</a>
 						 </div>
-							<div class="form_wrap">
-							 	<h1><cms:text constant="header"/></h1>
-							 		<cms:module
-										name="articles"
-										action="show"
-										text_id="form_article"
-										template="parts/article_header.xml"
-										/>
-									<cms:module
-								 				name="contact_form"
-								 				action="show"
-								 				text_id="animation_form"
-						 				/>
-
-							 </div>
-							<!-- animation Divs -->
-							 <div class="first_step">
-							 		<div class="progress">
-							 			<div class="meter"><span></span></div>
-							 			<span><cms:text constant="anima1"/></span>
-							 		</div>
-							 		<div class="progress">
-							 			<div class="meter"><span></span></div>
-							 			<span><cms:text constant="anima2"/></span>
-							 		</div>
-							 		<div class="progress">
-							 			<div class="meter"><span></span></div>
-							 			<span><cms:text constant="anima3"/></span>
-							 		</div>
-							 		<div class="progress">
-							 			<div class="meter"><span></span></div>
-							 			<span><cms:text constant="anima4"/></span>
-							 		</div>
-
-							 </div>
-							 <div class="thanks_step">
-						 			<cms:module
-										name="articles"
-										action="show"
-										text_id="success"
-										template="parts/article_header.xml"
-										/>
-
-							 </div>
 					</div>
+					<div class="animation_page">
+							<div class="animate">
+							 	<div class="inner_wrap">
+							 		<h1><cms:text constant="header"/></h1>
+ 								 		<cms:module
+													name="articles"
+													action="show"
+													text_id="form_article"
+													template="parts/article_header.xml"
+													/>
+ 										<cms:module
+ 									 				name="contact_form"
+ 									 				action="show"
+ 									 				text_id="animation_form"
+ 							 						/>
+					 			</div>
+
+							 </div>
+							 <div class="animate">
+									<div class="inner_wrap">
+							 			<div class="progress">
+ 									 			<div class="meter"><span></span></div>
+ 									 			<span><cms:text constant="anima1"/></span>
+								 		</div>
+								 		<div class="progress">
+								 			<div class="meter"><span></span></div>
+								 			<span><cms:text constant="anima2"/></span>
+								 		</div>
+								 		<div class="progress">
+								 			<div class="meter"><span></span></div>
+								 			<span><cms:text constant="anima3"/></span>
+								 		</div>
+								 		<div class="progress">
+								 			<div class="meter"><span></span></div>
+								 			<span><cms:text constant="anima4"/></span>
+								 		</div>
+									</div>
+						 	</div>
+						 	<div class="animate">
+						 			<div class="inner_wrap">
+						 				<div class="form_text">
+						 					<h2><cms:text constant="userUrl"/></h2>
+							 				<span></span>
+							 				<span><cms:text constant="form_title"/></span>
+							 			</div>
+						 				<cms:module
+									 				name="contact_form"
+									 				action="show"
+									 				text_id="contact_form"
+ 							 						/>
+						 			</div>
+						 	</div>
+
+						 	<div class="animate">
+								<div class="inner_wrap">
+						 				<cms:module
+											name="articles"
+											action="show"
+											text_id="success"
+											template="parts/article_header.xml"
+											/>
+								</div>
+							</div>
+					 </div>
 					<div class="header_bottom">
 						<h2><cms:text constant="seo_title"/></h2>
 					</div>
