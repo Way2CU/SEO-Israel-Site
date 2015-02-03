@@ -14,6 +14,7 @@
 					<div class="inner_wrap">
 						 <div class="contact">
 								<span><cms:text constant="contact"/></span>
+								<cms:desktop>
 								<a
 									href="'tel:'.urlencode(Language::getText('phone'))"
 									cms:eval="href"
@@ -21,6 +22,16 @@
 									>
 									<cms:text constant="phone"/>
 								</a>
+								</cms:desktop>
+								<cms:mobile>
+								<a
+									href="'tel:'.urlencode(Language::getText('phone'))"
+									cms:eval="href"
+									class="phone"
+									>
+
+								</a>
+								</cms:mobile>
 						 </div>
 					</div>
 					<div class="animation_page">
@@ -132,7 +143,6 @@
 			</div>
 			<!-- Social Section -->
 			<div class="social_wrap">
-					<div class="inner_wrap">
 							<h2><cms:text constant="social_title"/></h2>
 							<span></span>
 							<span></span>
@@ -141,7 +151,6 @@
 							<span></span>
 							<span></span>
 							<span></span>
-					</div>
 			</div>
 			<!-- Testimonial Section -->
 			<div class="testimonial_wrap">
