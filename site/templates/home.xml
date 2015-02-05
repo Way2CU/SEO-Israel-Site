@@ -50,9 +50,9 @@
  									 				text_id="animation_form"
  							 						/>
 					 			</div>
-
 							 </div>
-							 <div class="animate">
+
+							<div class="animate">
 									<div class="inner_wrap">
 							 			<div class="progress">
  									 			<div class="meter"><span></span></div>
@@ -72,6 +72,7 @@
 								 		</div>
 									</div>
 						 	</div>
+
 						 	<div class="animate">
 						 			<div class="inner_wrap">
 						 				<div class="form_text">
@@ -97,10 +98,12 @@
 											/>
 								</div>
 							</div>
-					 </div>
+					</div>
+
 					<div class="header_bottom">
 						<h2><cms:text constant="seo_title"/></h2>
 					</div>
+
 			</header>
 			<!-- FEATURES SECTION -->
 			<div class="feature_wrap">
