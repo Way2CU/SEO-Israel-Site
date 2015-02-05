@@ -37,12 +37,20 @@ function on_site_load() {
 	function check_domain(){
 		new Communicator('tools')
 				.on_success(function(data) {
-					if (data)
-						Caracal.animation_pages.switchPage(3); else
-						Caracal.animation_pages.switchPage(1);
+					if (data){
+
+						setTimeout(function() {
+						Caracal.animation_pages.nextPage()
+						}, 14000);
+					}
+
 				})
+
+				.on_error(function() {
+                    page_control.showPage(0);
+                })
 				.use_cache(true)
-				.get('check_domain', {domain: 'http://www.walla.co.il'});
+				.get('check_domain', {domain: 'www.walla.co.il'});
 	}
 
 }
