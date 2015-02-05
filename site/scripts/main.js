@@ -38,7 +38,7 @@ function on_site_load() {
 		new Communicator('tools')
 				.on_success(function(data) {
 					if (data){
-
+						Caracal.animation_pages.nextPage()
 						setTimeout(function() {
 						Caracal.animation_pages.nextPage()
 						}, 14000);
@@ -47,10 +47,15 @@ function on_site_load() {
 				})
 
 				.on_error(function() {
-                    page_control.showPage(0);
+					Caracal.animation_pages.nextPage()
+					setTimeout(function() {
+						 Caracal.animation_pages.showPage(0)
+
+						}, 14000);
+
                 })
 				.use_cache(true)
-				.get('check_domain', {domain: 'www.walla.co.il'});
+				.get('check_domain', {domain: '.way2cu.com'});
 	}
 
 }
