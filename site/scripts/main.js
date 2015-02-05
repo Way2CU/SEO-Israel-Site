@@ -9,22 +9,8 @@ var Caracal = Caracal || {};
 function on_site_load() {
 
 	Caracal.animation_pages = new PageControl('div.animation_page','div.animate')
-	Caracal.animation_pages.attachNextControl($('div.controls button').eq(0))
-	Caracal.animation_pages.showPage(0);
-	Caracal.animation_pages.setValidatorFunction(0,function(){
-
-		$.ajax({
-	    type: 'HEAD',
-	    url:"http://www."+ $('input[name="url"]').val(),
-	    async: false,
-	    success: function(){
-	      alert("OK");
-	    },
-	    error: function() {
-	     alert('WRONG');
-	    }
-	  });
-	})
+	// Caracal.animation_pages.attachNextControl($('div.controls button').eq(0))
+	Caracal.animation_pages.showPage(0)
 
 	$('form:last()').on('dialog-show', function(error) {
 		if (error) {
@@ -45,6 +31,19 @@ function on_site_load() {
 	// 		Caracal.animation_pages.nextPage()
 	// 	}, 14000);
 	// });
+
+	$('div.controls button').eq(0).click(check_domain);
+
+	function check_domain(){
+		new Communicator('tools')
+				.on_success(function(data) {
+					if (data)
+						Caracal.animation_pages.switchPage(3); else
+						Caracal.animation_pages.switchPage(1);
+				})
+				.use_cache(true)
+				.get('check_domain', {domain: 'http://www.walla.co.il'});
+	}
 
 }
 
