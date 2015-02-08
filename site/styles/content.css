@@ -320,10 +320,10 @@ header div.animation_page div.animate:nth-of-type(2) div.inner_wrap div.progress
 
 header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(1) div.meter span {
 	width:0%;
-	-webkit-animation:progress1 12s infinite;
-	-moz-animation:progress1 12s infinite;
-	-o-animation:progress1 12s infinite;
-	animation:progress1 12s infinite;
+	-webkit-animation:progress1 12s 1;
+	-moz-animation:progress1 12s 1;
+	-o-animation:progress1 12s 1;
+	animation:progress1 12s 1;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
@@ -334,10 +334,10 @@ header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.
 
 header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(2) div.meter span {
 	width:0%;
-	animation:progress1 12s infinite;
-	-webkit-animation:progress2 12s infinite;
-	-moz-animation:progress2 12s infinite;
-	-o-animation:progress2 12s infinite;
+	animation:progress1 12s 1;
+	-webkit-animation:progress2 12s 1;
+	-moz-animation:progress2 12s 1;
+	-o-animation:progress2 12s 1;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
@@ -348,10 +348,10 @@ header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.
 
 header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(3) div.meter span {
 	width:0%;
-	animation:progress1 12s infinite;
-	-webkit-animation:progress3 12s infinite;
-	-moz-animation:progress3 12s infinite;
-	-o-animation:progress3 12s infinite;
+	animation:progress1 12s 1;
+	-webkit-animation:progress3 12s 1;
+	-moz-animation:progress3 12s 1;
+	-o-animation:progress3 12s 1;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
@@ -362,10 +362,10 @@ header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.
 
 header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(4) div.meter span {
 	width:0%;
-	animation:progress1 12s infinite;
-	-webkit-animation:progress4 12s infinite;
-	-moz-animation:progress4 12s infinite;
-	-o-animation:progress4 12s infinite;
+	animation:progress1 12s 1;
+	-webkit-animation:progress4 12s 1;
+	-moz-animation:progress4 12s 1;
+	-o-animation:progress4 12s 1;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
