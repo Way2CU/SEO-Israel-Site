@@ -323,53 +323,57 @@ header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.
 	-webkit-animation:progress1 12s 1;
 	-moz-animation:progress1 12s 1;
 	-o-animation:progress1 12s 1;
-	animation:progress1 12s 1;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
-    animation-delay: 2s;
+	animation-name:progress1;
+	animation-duration:12s;
+	animation-iteration-count:1;
 	position: relative;
 
 }
 
 header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(2) div.meter span {
 	width:0%;
-	animation:progress1 12s 1;
 	-webkit-animation:progress2 12s 1;
 	-moz-animation:progress2 12s 1;
 	-o-animation:progress2 12s 1;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
-    animation-delay: 2s;
+	animation-name:progress2;
+	animation-duration:12s;
+	animation-iteration-count:1;
 	position: relative;
 
 }
 
 header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(3) div.meter span {
 	width:0%;
-	animation:progress1 12s 1;
 	-webkit-animation:progress3 12s 1;
 	-moz-animation:progress3 12s 1;
 	-o-animation:progress3 12s 1;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
-    animation-delay: 2s;
+	animation-name:progress3;
+	animation-duration:12s;
+	animation-iteration-count:1;
 	position: relative;
 
 }
 
 header div.animation_page div.animate.visible:nth-of-type(2) div.inner_wrap div.progress:nth-of-type(4) div.meter span {
 	width:0%;
-	animation:progress1 12s 1;
 	-webkit-animation:progress4 12s 1;
 	-moz-animation:progress4 12s 1;
 	-o-animation:progress4 12s 1;
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	-o-animation-delay: 2s;
-    animation-delay: 2s;
+	animation-name:progress4;
+	animation-duration:12s;
+	animation-iteration-count:1;
 	position: relative;
 
 }
@@ -386,14 +390,14 @@ header div.animation_page div.animate:nth-of-type(2).visible {
 	-webkit-animation-delay: 4s;
 	-moz-animation-delay: 4s;
 	-o-animation-delay: 4s;
-    animation-delay: 4s;
 	-webkit-animation:navigate 12s infinite;
 	-moz-animation:navigate 12s infinite;
 	-o-animation:navigate 12s infinite;
-	animation:navigate 12s infinite;
 	-webkit-animation-direction: alternate;
 	-moz-animation-direction: alternate;
 	-o-animation-direction: alternate;
+	animation:navigate 12s infinite;
+	animation-delay: 4s;
     animation-direction: alternate;
 }
 
@@ -573,12 +577,23 @@ header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label i
 	display: inline-block;
 	vertical-align: middle;
 	padding-right: 5px;
+	direction: ltr;
 	font-size: 1.6em;
 	height: 60px;
 	border:1px solid rgba(43, 59, 79, 0.7) ;
 	transition:all 0.5s;
 }
 
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label input[name="email"] {
+	text-align: right;
+}
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label input[name="phone"] {
+	text-align: right;
+}
+
+header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label input[name="name"] {
+	text-align: right;
+}
 header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label input:focus {
 	border:1px solid #26ad5f;
 }
