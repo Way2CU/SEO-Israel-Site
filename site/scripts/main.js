@@ -11,14 +11,12 @@ function on_site_load() {
 	Caracal.animation_pages = new PageControl('div.animation_page','div.animate')
 	Caracal.animation_pages.showPage(0)
 
-	$('form:last()').on('dialog-show', function(error) {
-		if (error) {
+	$('form:last()').on('dialog-show', function() {
+			$('form').hide();
+			$('div.send').hide();
 			Caracal.animation_pages.nextPage();
-		} else {
 			return false;
-		}
-	});
-
+		});
 
 	$('div.controls button').eq(0).click(check_domain);
 
@@ -39,8 +37,9 @@ function on_site_load() {
 						}, 14000);
 					}else {
 						Caracal.animation_pages.showPage(0);
-						$('form:first() input[name="url"]').val(' ');
+						$('form:first() input[name="url"]').val('');
 						$('form:first() input[name="url"]').attr('placeholder','Enter A Valid Url');
+
 
 					}
 
