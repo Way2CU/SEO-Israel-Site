@@ -2,6 +2,7 @@
 	<img 
 		src="$params['image']" 
 		alt="$params['title'][$language]"
+		class="slider"
 		cms:eval="src,alt"
 		/>
 </document>
