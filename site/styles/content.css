@@ -55,12 +55,19 @@ header:before {
 	z-index: 1;	
 }
 
-header > img {
+header > img.slider {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 50%;
+	margin-left: -960px;
 	width: 1920px;
 	height: 800px;
+	opacity: 0;
+	transition:all 0.3s;
+}
+
+header > img.slider.visible {
+	opacity: 1;
 }
 
 header div.inner_wrap div.contact {
