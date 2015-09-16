@@ -28,9 +28,9 @@ $db_use = true;
 $db_type = DatabaseType::MYSQL;
 $db_config = array(
 		'host' => 'localhost',
-		'user' => 'seoisrael',
-		'pass' => 'Ejd6n5@9',
-		'name' => 'seoisrael'
+		'user' => 'root',
+		'pass' => 'caracal',
+		'name' => 'web_engine'
 	);
 
 // configure code generation
