@@ -12,7 +12,14 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<!--Top Section of the site  -->
 			<header>
-					<div id="header_wrap" class="inner_wrap">
+				<div class="header_slider">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="header_slider"
+						template="parts/slider_images.xml"
+						/>
+					<div class="inner_wrap">
 						 <div class="contact">
 								<a href="https://www.google.com/partners/#a_profile;idtf=01334875181514626000;" target="_blank">
 							 		<img
@@ -42,6 +49,7 @@
 								</cms:mobile>
 						 </div>
 					</div>
+				
 					<div class="animation_page">
 							<div class="animate">
 							 	<div class="inner_wrap">
@@ -111,7 +119,7 @@
 					<div class="header_bottom">
 						<h2><cms:text constant="seo_title"/></h2>
 					</div>
-
+				</div>	
 			</header>
 			<!-- FEATURES SECTION -->
 			<div class="feature_wrap">
