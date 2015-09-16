@@ -79,6 +79,16 @@ Site.on_load = function() {
 
 	});
 
+	// Create slider for header gallery_images 
+	Site.header_gallery = new Caracal.Gallery.Slider();
+	Site.header_gallery
+		.images.set_container('div.header_slider')
+		.images.add('div.header_slider > img')
+		.images.set_visible_count(1)
+		.controls.set_pause_on_hover(false)
+		.controls.set_auto(4000);
+	Site.header_gallery.images.update();
+
 	if (Site.is_mobile())
 		$("div.contact span").html("<a style='background-image:none; color: #00BBE3; text-decoration: none; width: 100%; font-size: 0.75em;' class='phone' href='tel:073-2240000'><span style='padding-left: 5px;'>צור קשר</span></a>");
 
