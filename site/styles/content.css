@@ -42,7 +42,15 @@ header {
 	overflow: hidden;
 }
 
-header:before {
+header #header_wrap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	position: relative;	
+}
+
+header #header_wrap:before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -57,8 +65,7 @@ header:before {
 	-ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
 	-o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
 	filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
-	z-index: 1;
-
+	z-index: 1;	
 }
 
 header div.inner_wrap {
