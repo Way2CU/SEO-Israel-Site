@@ -5,6 +5,7 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:raw file="/parts/external-scripts.txt"/>
 			<cms:collection include="page_control,communicator"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
@@ -13,6 +14,13 @@
 			<header>
 					<div class="inner_wrap">
 						 <div class="contact">
+								<a href="https://www.google.com/partners/#a_profile;idtf=01334875181514626000;" target="_blank">
+							 		<img
+										src="_BASEURL.'/site/images/header/partner.png'"
+										alt="google partners"
+										cms:eval="src"
+									/>
+								</a>
 								<span><cms:text constant="contact"/></span>
 								<cms:desktop>
 								<a
@@ -42,7 +50,7 @@
 													name="articles"
 													action="show"
 													text_id="form_article"
-													template="parts/article_header.xml"
+													template="parts/article_header2.xml"
 													/>
  										<cms:module
  									 				name="contact_form"
@@ -94,7 +102,7 @@
 											name="articles"
 											action="show"
 											text_id="success"
-											template="parts/article_header.xml"
+											template="parts/article_header2.xml"
 											/>
 								</div>
 							</div>

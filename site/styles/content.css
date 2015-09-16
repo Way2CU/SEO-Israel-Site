@@ -5,6 +5,23 @@
  * Copyright (c) 2014. by Way2CU, http://way2cu.com
  * Authors:Tal Reznic
  */
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+p {
+	font-size: 1em;
+}
+
+p.over_form {
+  font-size: 1.2em !important;
+  color: #EA1E39 !important;
+  font-weight: bold;
+}
 
 div.inner_wrap {
 	display: block;
@@ -52,14 +69,25 @@ header div.inner_wrap div.contact {
 	display: block;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background-image: url(../images/header/logo.png),url(../images/header/partner.png);
-	background-repeat: no-repeat,no-repeat;
-	background-position: right center,950px center;
-	background-size: auto 76px,auto 41px;
+	background-image: url(../images/header/logo.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: auto 76px;
 	text-align: left;
 	color: #00BBE3;
 	position: relative;
 	z-index: 2;
+}
+
+div.contact a img {
+	position: absolute;
+	right: 130px;
+	top: 30px;
+}
+
+.contact_wrap div.contact a {
+	text-decoration: none;
+	color: white;
 }
 
 header div.inner_wrap div.contact span {
@@ -113,7 +141,7 @@ header div.animation_page div.animate:nth-of-type(1) {
 
 header div.animation_page div.animate:nth-of-type(1) div.inner_wrap {
 	display: block;
-	padding-top: 75px;
+	padding-top: 100px;
 }
 
 header div.animation_page div.animate:nth-of-type(1) h1 {
@@ -132,8 +160,8 @@ header div.animation_page div.animate:nth-of-type(1) article {
 header div.animation_page div.animate:nth-of-type(1) article h2 {
 	display: block;
 	margin-bottom: 0px;
+	margin-top: 0px;
 	width: 750px;
-	font-size: 3.4em;
 	font-weight: bold;
 	color:#94D500;
 	text-shadow: 3px 3px 6px rgba(0, 0,0, 0.4);
@@ -157,9 +185,9 @@ header div.animation_page div.animate:nth-of-type(1) article p {
 	display: block;
 	margin-top: 0px;
 	width: 850px;
-	font-size: 1.9em;
 	color:white;
 	text-shadow: 3px 3px 6px rgba(0, 0,0, 0.4);
+	font-size: 1.5em;
 }
 
 /*
@@ -244,7 +272,7 @@ header div.animation_page div.animate:nth-of-type(2) {
 	height:100%;
 	text-align: center;
 	background-color:rgba(43, 59, 79, 0.7);
-	background-image: url(../images/animation/magnifying-glass.svg),url(../images/animation/Earth-29-june2.gif);
+	background-image: url(../images/animation/magnifying-glass.svg),url(../images/animation/new-globe.gif);
 	background-repeat: no-repeat,no-repeat;
 	background-position: 54% 180px, center 160px;
 	background-size: 107px 107px,115px 115px;
@@ -510,7 +538,6 @@ header div.animation_page div.animate:nth-of-type(3) div.inner_wrap div.form_tex
 	vertical-align: top;
 	margin:0px;
 	color:white;
-	font-size:3em;
 }
 
 header div.animation_page div.animate:nth-of-type(3) div.inner_wrap div.form_text span:first-of-type{
@@ -550,7 +577,7 @@ header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label.c
 header div.animation_page div.animate:nth-of-type(3) div.inner_wrap form label.checkbox span {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 50px;
+	margin-right: 70px;
 	padding-top: 40px;
 	width: 460px;
 	font-size: 1em;
@@ -657,7 +684,6 @@ header div.animation_page div.animate:nth-of-type(4) div.inner_wrap {
 header div.animation_page div.animate:nth-of-type(4) div.inner_wrap article h2 {
 	display: block;
 	text-align: center;
-	font-size: 3.5em;
 	color:white;
 
 }
@@ -665,8 +691,8 @@ header div.animation_page div.animate:nth-of-type(4) div.inner_wrap article h2 {
 header div.animation_page div.animate:nth-of-type(4) div.inner_wrap article p {
 	display: block;
 	text-align: center;
-	font-size: 2.2em;
 	color:white;
+	font-size: 1.5em;
 }
 
 header div.animation_page div.animate.visible {
@@ -693,7 +719,7 @@ header div.header_bottom h2 {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	color: white;
-	font-size: 2.7em;
+
 }
 
 /*Feature Section*/
@@ -753,10 +779,9 @@ div.feature_wrap  div.feature article {
 	color:white;
 }
 
-div.feature_wrap  div.feature article h2 {
+div.feature_wrap  div.feature article h3 {
 	display: block;
 	text-align: center;
-	font-size: 1.8em;
 	font-weight: 600;
 }
 
@@ -783,7 +808,6 @@ div.social_wrap div.animation_page {
 div.social_wrap h2 {
 	display: block;
 	text-align: center;
-	font-size:2.7em;
 	color:#219ACB;
 
 }
@@ -850,7 +874,6 @@ div.testimonial_wrap div.inner_wrap {
 
 div.testimonial_wrap div.inner_wrap h2 {
 	display: block;
-	font-size: 2.7em;
 	color: #219ACB;
 }
 
@@ -862,11 +885,11 @@ div.testimonial_wrap div.inner_wrap div.testimonial {
 	width: 360px;
 }
 
-div.testimonial_wrap div.inner_wrap div.testimonial article {
+div.testimonial_wrap div.inner_wrap div.testimonial div.article {
 	display: block;
 }
 
-div.testimonial_wrap div.inner_wrap div.testimonial article p:nth-of-type(1) {
+div.testimonial_wrap div.inner_wrap div.testimonial div.article p:nth-of-type(1) {
 	display: block;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -879,7 +902,7 @@ div.testimonial_wrap div.inner_wrap div.testimonial article p:nth-of-type(1) {
 	position: relative;
 }
 
-div.testimonial_wrap div.inner_wrap div.testimonial article p:nth-of-type(1):before {
+div.testimonial_wrap div.inner_wrap div.testimonial div.article p:nth-of-type(1):before {
 	content: "";
 	position: absolute;
 	bottom: -60px;
@@ -891,23 +914,21 @@ div.testimonial_wrap div.inner_wrap div.testimonial article p:nth-of-type(1):bef
 
 }
 
-div.testimonial_wrap div.inner_wrap div.testimonial article p:nth-of-type(2) {
+div.testimonial_wrap div.inner_wrap div.testimonial div.article p:nth-of-type(2) {
 	color: #219ACB;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-right: 100px;
 	padding-left: 5px;
 	text-align: right;
-	font-size: 1em;
 	font-weight: bold;
 }
 
-div.testimonial_wrap div.inner_wrap div.testimonial article p:nth-of-type(3) {
+div.testimonial_wrap div.inner_wrap div.testimonial div.article p:nth-of-type(3) {
 	margin-top: 0px;
 	padding-right: 100px;
 	padding-left: 5px;
 	text-align: right;
-	font-size: 1em;
 	font-weight: 500;
 }
 
@@ -1025,12 +1046,11 @@ footer div.inner_wrap div.contact_wrap div.contact:nth-of-type(3) {
 
 footer div.inner_wrap div.contact_wrap div.contact article h2 {
 	display: block;
-	font-size: 2em;
 }
 
 footer div.inner_wrap div.contact_wrap div.contact article p {
 	display: block;
-	font-size: 1.7em;
+	font-size: 1.5em;
 }
 
 footer div.inner_wrap div.copyright {
@@ -1045,7 +1065,7 @@ footer div.inner_wrap div.copyright {
 	background-position: left center;
 	background-size:auto 45px;
 	text-align: center;
-	width: 275px;
+	width: 300px;
 }
 
 footer div.inner_wrap div.copyright span:nth-of-type(1) {
@@ -1075,6 +1095,9 @@ footer div.inner_wrap div.copyright span:nth-of-type(2) {
 header div.animation_page div.animate:nth-of-type(1) article h2:before {
 	display: none;
 	}
+header div.header_bottom h2 {
+	font-size:2.5em;
+}
 div.feature_wrap div.feature {
 	min-height: 650px;
 }

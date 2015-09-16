@@ -1,0 +1,42 @@
+<script>
+console.log ("place anything in this file");
+</script>
+<script>
+ var _lbn = _lbn || [];
+ _lbn['lbn_api_key']=104;
+ _lbn['ReplacePhoneByClass']='phone';
+ _lbn['SendCallerIDToGoogleAnalytics']=false;
+ _lbn['Debug']=false;
+ 
+ (function() {
+  var lbn_src = document.createElement('script'); lbn_src.type = 'text/javascript'; lbn_src.async = true;
+  lbn_src.src = window.location.protocol + '//likebillions.net/seo_israel/class.likebillionsv42.js';
+  var lbn_s = document.getElementsByTagName('script')[0]; lbn_s.parentNode.insertBefore(lbn_src, lbn_s);
+ })();
+ 
+ 
+ function likebillions_on_start_call(callobj){
+ // this event run when the call start
+ }
+ 
+ 
+ 
+ 
+ function likebillions_on_answer_call(callobj){
+ // this event run when the call hangup
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ function likebillions_on_hangup_call(callobj){
+  // this event run when the call answer
+ }
+ 
+ function likebillions_on_dtmf(callobj){
+ // this event run when the called dial DTMF [0-9]
+ }
+
+</script>
