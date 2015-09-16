@@ -1,9 +1,9 @@
 /**
- * Main Javascript
- * SEO-ISRAEL
+ * Main JavaScript
+ * SEO Israel
  *
- * Copyright (c) 2014. by Way2CU, http://way2cu.com
- * Authors:Tal Reznic
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
  */
 var Caracal = Caracal || {};
 
@@ -46,9 +46,12 @@ Site.is_mobile = function() {
 	return result;
 };
 
-
-
-function on_site_load() {
+/**
+ * Function called when document and images have been completely loaded.
+ */
+Site.on_load = function() {
+	if (Site.is_mobile())
+		Site.mobile_menu = new Caracal.MobileMenu();
 
 	Caracal.animation_pages = new PageControl('div.animation_page','div.animate')
 	Caracal.animation_pages.showPage(0)
@@ -76,46 +79,8 @@ function on_site_load() {
 
 	});
 
-	if (Site.is_mobile()) $("div.contact span").html("<a style='background-image:none; color: #00BBE3; text-decoration: none; width: 100%; font-size: 0.75em;' class='phone' href='tel:073-2240000'><span style='padding-left: 5px;'>צור קשר</span></a>");
-
-
-
-	// $('div.controls button').eq(0).click(check_domain);
-
-	// function check_domain(event){
-	// 	// prevent form from submitting
-	// 	event.preventDefault();
-
-	// 	Caracal.animation_pages.nextPage()
-	// 	var url=$('input[name="url"]').val();
-	// 	var domain="www." + url;
-	// 	new Communicator('tools')
-	// 			.on_success(function(data) {
-	// 				if (data){
-	// 					var domainS="http://";
-	// 					var url1="www.";
-	// 				 	var url=$('input[name="url"]').val();
-	// 					$('form:last() input[name="url"]').val(domainS + url1 + url);
-	// 					$('div.form_text span:first-of-type').text(url1 + url);
-	// 					setTimeout(function() {
-	// 					Caracal.animation_pages.nextPage()
-	// 					}, 14000);
-	// 				}else {
-	// 					Caracal.animation_pages.showPage(0);
-	// 					$('form:first() input[name="url"]').val('');
-	// 					$('form:first() input[name="url"]').attr('placeholder','Enter A Valid Url');
-
-
-	// 				}
-
-	// 			})
-
-	// 			.on_error(function() {
-
- //                })
-	// 			.use_cache(true)
-	// 			.get('check_domain', {domain:domain});
-	// }
+	if (Site.is_mobile())
+		$("div.contact span").html("<a style='background-image:none; color: #00BBE3; text-decoration: none; width: 100%; font-size: 0.75em;' class='phone' href='tel:073-2240000'><span style='padding-left: 5px;'>צור קשר</span></a>");
 
 	$('form').last().on('analytics-event', function(event, data) {
 	    // register Google AdWords conversion
@@ -126,7 +91,8 @@ function on_site_load() {
 	    console.log ("ppc conversion");
 	});
 
-}
+};
 
-$(on_site_load);
 
+// connect document `load` event with handler function
+$(Site.on_load);

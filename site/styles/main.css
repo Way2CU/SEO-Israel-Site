@@ -1,12 +1,15 @@
 /**
  * Main Style Sheet
- * SEO-ISRAEL
+ * SEO Israel
  *
- * Copyright (c) 2014. by Way2CU, http://way2cu.com
- * Authors:Tal Reznic
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
  */
 @import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
 body {
+	background-color: white;
+
+	color: black;
 	font-family: 'Open Sans Hebrew', serif;
 }
