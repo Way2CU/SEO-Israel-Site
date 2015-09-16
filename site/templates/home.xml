@@ -12,43 +12,42 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<!--Top Section of the site  -->
 			<header>
-				<div class="header_slider">
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="header_slider"
-						template="parts/slider_images.xml"
-						/>
-					<div class="inner_wrap">
-						 <div class="contact">
-								<a href="https://www.google.com/partners/#a_profile;idtf=01334875181514626000;" target="_blank">
-							 		<img
-										src="_BASEURL.'/site/images/header/partner.png'"
-										alt="google partners"
-										cms:eval="src"
-									/>
-								</a>
-								<span><cms:text constant="contact"/></span>
-								<cms:desktop>
-								<a
-									href="'tel:'.urlencode(Language::getText('phone'))"
-									cms:eval="href"
-									class="phone"
-									>
-									<cms:text constant="phone"/>
-								</a>
-								</cms:desktop>
-								<cms:mobile>
-								<a
-									href="'tel:'.urlencode(Language::getText('phone'))"
-									cms:eval="href"
-									class="phone"
-									>
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="header_slider"
+					template="parts/slider_images.xml"
+					/>
+				<div class="inner_wrap">
+					 <div class="contact">
+						<a href="https://www.google.com/partners/#a_profile;idtf=01334875181514626000;" target="_blank">
+					 		<img
+								src="_BASEURL.'/site/images/header/partner.png'"
+								alt="google partners"
+								cms:eval="src"
+							/>
+						</a>
+						<span><cms:text constant="contact"/></span>
+						<cms:desktop>
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="phone"/>
+						</a>
+						</cms:desktop>
+						<cms:mobile>
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
 
-								</a>
-								</cms:mobile>
-						 </div>
-					</div>
+						</a>
+						</cms:mobile>
+					 </div>
+				</div>
 				
 					<div class="animation_page">
 							<div class="animate">
@@ -118,8 +117,7 @@
 
 					<div class="header_bottom">
 						<h2><cms:text constant="seo_title"/></h2>
-					</div>
-				</div>	
+					</div>	
 			</header>
 			<!-- FEATURES SECTION -->
 			<div class="feature_wrap">
