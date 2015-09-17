@@ -11,18 +11,19 @@
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	width: auto;
 }
 
 header {
-	display: block;
-	position: relative;
-	background-color: #33485d;
-	background-image: url(../images/header/mobile-header-background.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 130%;
-	height: 730px;
-	overflow: hidden;
+    display: block;
+    position: relative;
+    background-color: #33485d;
+    background-image: url(../images/header/mobile-header-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 60px;
+    background-size: 140%;
+    height: 730px;
+    overflow: hidden;
 }
 
 header div.inner_wrap {
@@ -35,23 +36,24 @@ header div.inner_wrap div.contact {
 	top: 0px;
 	width: 100%;
 	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.85);
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background-color: white;
 	background-image: url(../images/header/logo.png);
 	background-repeat: no-repeat;
-	background-position: right center;
+	background-position: center center;
 	background-size: 20%;
-	text-align: left;
+	text-align: center;
 	color: #00BBE3;
 	z-index: 3;
 }
 
-div.contact a img {
+div.contact > a img {
 	position: absolute;
 	width: 80px;
-	right: 24%;
-	top: 30px;
+	right: 5px;
+	top: 50%;
+	margin-top: -14px;
 }
 
 header div.inner_wrap div.contact span {
@@ -63,15 +65,18 @@ header div.inner_wrap div.contact span {
 
 }
 
-header div.inner_wrap div.contact a:last-of-type {
-	display: inline-block;
-	vertical-align: middle;
+header div.inner_wrap div.contact  a.phone {
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	left: 5px;
 	background-image: url(../images/header/icon-phone.svg);
 	background-repeat: no-repeat;
-	background-position:10px center;
+	background-position:center center;
 	background-size: 40px 40px;
 	width: 50px;
 	height: 40px;
+	font-size: 0px;
 
 }
 
@@ -689,11 +694,15 @@ div.feature_wrap  div.feature article h2 {
 	font-weight: 600;
 }
 
+div.feature_wrap  div.feature article ul li {
+	font-size: 1.1em;
+}
+
 div.feature_wrap  div.feature article ul li p {
 	display: block;
 	margin: 0px;
 	text-align: right;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 /*
@@ -723,7 +732,6 @@ div.social_wrap span {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 15px;
-	margin-right: 10px;
 	background-image: url(../images/platform/platforms.jpg);
 	background-repeat: no-repeat;
 	background-position: -400px center;
