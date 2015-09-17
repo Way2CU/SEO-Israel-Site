@@ -12,12 +12,14 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<!--Top Section of the site  -->
 			<header>
+				<cms:desktop>
 				<cms:module
 					name="gallery"
 					action="show_image_list"
 					group="header_slider"
 					template="parts/slider_images.xml"
 					/>
+				</cms:desktop>	
 				<div class="inner_wrap">
 					 <div class="contact">
 						<a href="https://www.google.com/partners/#a_profile;idtf=01334875181514626000;" target="_blank">
@@ -43,7 +45,6 @@
 							cms:eval="href"
 							class="phone"
 							>
-
 						</a>
 						</cms:mobile>
 					 </div>
