@@ -28,6 +28,7 @@ div.inner_wrap {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1200px;
+	position: relative;
 }
 
 header {
@@ -35,6 +36,17 @@ header {
 	position: relative;
 	min-height: 800px;
 	overflow: hidden;
+}
+
+header:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
 }
 
 header:before {
@@ -716,6 +728,7 @@ header div.header_bottom {
 	padding-bottom: 30px;
 	text-align: center;
 	background-color: rgba(44, 62, 80,0.7);
+	z-index:10 ;
 
 }
 
@@ -740,7 +753,7 @@ div.feature_wrap  div.feature {
 	padding-left: 15px;
 	padding-right: 15px;
 	width:calc(25% - 30px);
-	min-height: 600px;
+	min-height: 680px;
 	position: relative;
 }
 
@@ -1107,7 +1120,7 @@ header div.header_bottom h2 {
 	font-size:2.5em;
 }
 div.feature_wrap div.feature {
-	min-height: 650px;
+	min-height: 780px;
 }
 }
 
