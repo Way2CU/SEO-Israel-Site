@@ -21,6 +21,7 @@
 					/>
 				</cms:desktop>	
 				<div class="inner_wrap">
+					<cms:desktop>
 					 <div class="contact">
 						<a href="https://www.google.com/partners/#a_profile;idtf=01334875181514626000;" target="_blank">
 					 		<img
@@ -30,7 +31,6 @@
 							/>
 						</a>
 						<span><cms:text constant="contact"/></span>
-						<cms:desktop>
 						<a
 							href="'tel:'.urlencode(Language::getText('phone'))"
 							cms:eval="href"
@@ -38,16 +38,32 @@
 							>
 							<cms:text constant="phone"/>
 						</a>
-						</cms:desktop>
-						<cms:mobile>
 						<a
 							href="'tel:'.urlencode(Language::getText('phone'))"
 							cms:eval="href"
 							class="phone"
 							>
 						</a>
-						</cms:mobile>
 					 </div>
+					</cms:desktop>
+					<cms:mobile>
+						 <div class="contact">
+							<a href="https://www.google.com/partners/#a_profile;idtf=01334875181514626000;" target="_blank">
+						 		<img
+									src="_BASEURL.'/site/images/header/partner.png'"
+									alt="google partners"
+									cms:eval="src"
+								/>
+							</a>
+							<a
+								href="'tel:'.urlencode(Language::getText('phone'))"
+								cms:eval="href"
+								class="phone"
+								>
+							</a>
+						 </div>						
+
+					</cms:mobile>
 				</div>
 				
 					<div class="animation_page">
