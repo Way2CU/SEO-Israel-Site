@@ -38,12 +38,6 @@
 							>
 							<cms:text constant="phone"/>
 						</a>
-						<a
-							href="'tel:'.urlencode(Language::getText('phone'))"
-							cms:eval="href"
-							class="phone"
-							>
-						</a>
 					 </div>
 					</cms:desktop>
 					<cms:mobile>
