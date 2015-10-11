@@ -187,16 +187,17 @@ header div.animation_page div.animate:nth-of-type(1) article h2 {
 }
 
 header div.animation_page div.animate:nth-of-type(1) article h2:before {
-	content: "";
-	position: absolute;
-	top: 70px;
-	right: -165px;
-	background-image: url(../images/header/arrow.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 1920px 170px;
-	width: 170px;
-	height: 170px;
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-image: url(../images/header/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1920px 170px;
+    width: 170px;
+    height: 170px;
+    transform: scaleX(-1);
 }
 
 header div.animation_page div.animate:nth-of-type(1) article p {
