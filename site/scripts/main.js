@@ -50,8 +50,8 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile())
-		Site.mobile_menu = new Caracal.MobileMenu();
+	//if (Site.is_mobile())
+		//Site.mobile_menu = new Caracal.MobileMenu();
 
 	Caracal.animation_pages = new PageControl('div.animation_page','div.animate')
 	Caracal.animation_pages.showPage(0)
