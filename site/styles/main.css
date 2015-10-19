@@ -13,6 +13,6 @@ body {
 	font-family: 'Open Sans Hebrew', serif;
 }
 
-form[data-dynamic='1'] div.overlay.visible {
-	opacity: 0;
+form[data-dynamic='1'] div.overlay {
+	 background-color: rgba(255, 255, 255, 0.0);
 }
