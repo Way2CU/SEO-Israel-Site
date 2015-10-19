@@ -12,3 +12,7 @@ body {
 	color: black;
 	font-family: 'Open Sans Hebrew', serif;
 }
+
+form[data-dynamic='1'] div.overlay.visible {
+	opacity: 0;
+}
