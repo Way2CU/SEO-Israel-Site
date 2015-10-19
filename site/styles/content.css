@@ -743,7 +743,7 @@ div.feature_wrap  div.feature {
 	padding-left: 15px;
 	padding-right: 15px;
 	width:calc(25% - 30px);
-	min-height: 680px;
+	min-height: 550px;
 	position: relative;
 }
 
