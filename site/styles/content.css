@@ -53,7 +53,7 @@ header:before {
 	-ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
 	-o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
 	filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
-	z-index: 2;	
+	z-index: 2;
 }
 
 header > img.slider {
@@ -523,7 +523,6 @@ header div.animation_page div.animate:nth-of-type(3) {
 	height:100%;
 	opacity: 1;
 	background-color:rgba(43, 59, 79, 0.7);
-	transition:all 1s;
 }
 
 header div.animation_page div.animate:nth-of-type(3).visible {
