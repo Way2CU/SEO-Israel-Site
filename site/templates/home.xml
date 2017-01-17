@@ -19,7 +19,7 @@
 					group="header_slider"
 					template="parts/slider_images.xml"
 					/>
-				</cms:desktop>	
+				</cms:desktop>
 				<div class="inner_wrap">
 					<cms:desktop>
 					 <div class="contact">
@@ -55,11 +55,11 @@
 								class="phone"
 								>
 							</a>
-						 </div>						
+						 </div>
 
 					</cms:mobile>
 				</div>
-				
+
 					<div class="animation_page">
 							<div class="animate">
 							 	<div class="inner_wrap">
@@ -128,7 +128,7 @@
 
 					<div class="header_bottom">
 						<h2><cms:text constant="seo_title"/></h2>
-					</div>	
+					</div>
 			</header>
 			<!-- FEATURES SECTION -->
 			<div class="feature_wrap">
