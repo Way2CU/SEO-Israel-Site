@@ -54,7 +54,7 @@ Site.on_load = function() {
 		//Site.mobile_menu = new Caracal.MobileMenu();
 
 	Caracal.animation_pages = new PageControl('div.animation_page','div.animate')
-	Caracal.animation_pages.showPage(0)
+	Caracal.animation_pages.showPage(2)
 
 	$('form:last()').on('dialog-show', function() {
 			$('form').hide();
@@ -79,7 +79,7 @@ Site.on_load = function() {
 
 	});
 
-	// Create slider for header gallery_images 
+	// Create slider for header gallery_images
 	Site.header_gallery = new PageControl('header', 'img.slider');
 	Site.header_gallery
 		.setInterval(4000)
