@@ -102,8 +102,6 @@
 						 	<div class="animate">
 						 			<div class="inner_wrap">
 						 				<div class="form_text">
-						 					<h2><cms:text constant="userUrl"/></h2>
-							 				<span></span>
 							 				<span><cms:text constant="form_title"/></span>
 							 			</div>
 						 				<cms:module
