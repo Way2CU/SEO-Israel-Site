@@ -1,4 +1,5 @@
 .vagrant
 .DS_Store
-gallery/
-deploy/credentials/
+site/gallery/
+site/videos/
+site/downloads/

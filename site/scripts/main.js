@@ -54,7 +54,7 @@ Site.on_load = function() {
 		//Site.mobile_menu = new Caracal.MobileMenu();
 
 	Caracal.animation_pages = new PageControl('div.animation_page','div.animate')
-	Caracal.animation_pages.showPage(2)
+	Caracal.animation_pages.showPage(2);
 
 	$('form:last()').on('dialog-show', function() {
 			$('form').hide();
